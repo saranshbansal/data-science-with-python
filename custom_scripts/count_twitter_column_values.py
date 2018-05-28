@@ -2,8 +2,7 @@
 import pandas as pd
 
 # Import twitter data
-tweets_df = pd.DataFrame(pd.read_csv("../resources/cars.csv"))
-
+tweets_df = pd.DataFrame(pd.read_excel("../resources/Trump Tweets(2017).xlsx"))
 
 # Define count_entries()
 def count_entries(df, *args):
@@ -34,12 +33,8 @@ def count_entries(df, *args):
     return cols_count
 
 
-# Call count_entries(): result1
-result1 = count_entries(tweets_df, 'lang')
-
 # Call count_entries(): result2
-result2 = count_entries(tweets_df, 'lang', 'source')
+result = count_entries(tweets_df, 'Tweet', 'Date')
 
-# Print result1 and result2
-print(result1)
-print(result2)
+# Print result
+print(list(result))
