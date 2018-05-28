@@ -34,7 +34,13 @@ def count_entries(df, *args):
 
 
 # Call count_entries(): result2
-result = count_entries(tweets_df, 'Tweet', 'Date')
+result = count_entries(tweets_df, 'Tweet')
+
+# Filter our Retweets
+retweets = filter(lambda x: x[0:2] == 'RT', tweets_df['Tweet'])
 
 # Print result
-print(list(result))
+
+#print(list(result))
+for tweet in retweets:
+    print(tweet)
