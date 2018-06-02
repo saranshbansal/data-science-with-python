@@ -6,9 +6,8 @@ cars = pd.DataFrame(pd.read_csv("../resources/cars.csv"))
 jobs = pd.DataFrame(pd.read_csv("../resources/Information_gain_job_advertisements.csv"))
 industries = pd.DataFrame(pd.read_json("../resources/industries.json"))
 
-
 # Print out cars
-print(industries)
+print(cars.describe())
 
-# Print all colums
+# Print all columns of industries
 print(list(industries.resultList))
