@@ -37,7 +37,7 @@ def count_entries(df, *args):
 result = count_entries(tweets_df, 'Tweet')
 
 # Filter our Retweets
-retweets = filter(lambda x: x[0:2] == 'RT', tweets_df['Tweet'])
+retweets = (lambda x: x[0:2] == 'RT', tweets_df['Tweet'])
 
 # Print result
 
