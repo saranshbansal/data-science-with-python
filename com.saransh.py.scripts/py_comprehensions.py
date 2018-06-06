@@ -12,3 +12,11 @@ print(new_fellowship)
 
 # Print the new list
 print(new_fellowship_1)
+
+# -----------------------------#
+
+# Create dict comprehension: new_fellowship_dict
+new_fellowship_dict = {member: len(member) for member in fellowship}
+
+# Print the new list
+print(new_fellowship_dict)
