@@ -4,6 +4,7 @@ import pandas as pd
 # Import twitter data
 tweets_df = pd.DataFrame(pd.read_excel("../resources/Trump Tweets(2017).xlsx"))
 
+
 # Define count_entries()
 def count_entries(df, *args):
     """Return a dictionary with counts of
@@ -41,6 +42,6 @@ retweets = (lambda x: x[0:2] == 'RT', tweets_df['Tweet'])
 
 # Print result
 
-#print(list(result))
+# print(list(result))
 for tweet in retweets:
     print(tweet)

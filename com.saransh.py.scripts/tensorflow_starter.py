@@ -1,13 +1,9 @@
 import math
+from builtins import print
+
 import numpy as np
 import pandas as pd
 import tensorflow as tf
-
-from builtins import print
-from IPython import display
-from matplotlib import cm
-from matplotlib import gridspec
-from matplotlib import pyplot as plt
 from sklearn import metrics
 from tensorflow.python.data import Dataset
 
