@@ -35,9 +35,10 @@ df1 = xl.parse('bdonly')
 print(df1.head())
 
 # Load a sheet into a DataFrame by index: df2
-df2 = xl.parse(0)
+# parse_args :: sheet index/name | skiprows | custom column names | parse_cols columns to show
+df2 = xl.parse(0, skiprows=[0])
 
 # Print the head of the DataFrame df2
 print(df2.head())
 
-# PS: both are same!
+# PS: both are ~ same!
