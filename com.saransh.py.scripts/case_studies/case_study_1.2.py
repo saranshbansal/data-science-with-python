@@ -88,7 +88,7 @@ def read_large_file(file_object):
 
 # Writing a generator to load data in chunks (3)
 #
-# Great! You've just created a generator function that you can use to help you process large files.
+# Great! You've just created a generator function that you can use to help you process large file_operations.
 #
 # Now let's use your generator function to process the World Bank dataset like you did previously.
 # You will process the file line by line, to create a dictionary of the counts of how many times each country

@@ -1,4 +1,4 @@
-# Listing sheets in Excel files
+# Listing sheets in Excel file_operations
 #
 # Whether you like it or not, any working data scientist will need to deal with Excel spreadsheets at some point in
 # time. You won't always want to do so in Excel, however!

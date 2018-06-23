@@ -11,18 +11,18 @@
 # list of tuples, then the zip object, and finally, the tuple values in the for loop.
 
 mutants = ['charles xavier',
- 'bobby drake',
- 'kurt wagner',
- 'max eisenhardt',
- 'kitty pride']
+           'bobby drake',
+           'kurt wagner',
+           'max eisenhardt',
+           'kitty pride']
 
 aliases = ['prof x', 'iceman', 'nightcrawler', 'magneto', 'shadowcat']
 
 powers = ['telepathy',
- 'thermokinesis',
- 'teleportation',
- 'magnetokinesis',
- 'intangibility']
+          'thermokinesis',
+          'teleportation',
+          'magnetokinesis',
+          'intangibility']
 
 # Create a list of tuples: mutant_data
 mutant_data = list(zip(mutants, aliases, powers))
