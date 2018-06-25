@@ -16,10 +16,10 @@
 # Import pandas
 import pandas as pd
 
-path = '../resources/'
+from def_path import path
 
 # Assign spreadsheet filename: file
-file = 'battledeath_3.1.xlsx'
+file = 'battledeath.xlsx'
 
 # Load spreadsheet: xl
 xl = pd.ExcelFile(path + file)
@@ -29,7 +29,7 @@ print(xl.sheet_names)
 
 # -------------------------------------------
 # Load a sheet into a DataFrame by name: df1
-df1 = xl.parse('bdonly')
+df1 = xl.parse('2004')
 
 # Print the head of the DataFrame df1
 print(df1.head())

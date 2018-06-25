@@ -1,6 +1,6 @@
 # Import pandas as pd
 import pandas as pd
-path = '../resources/'
+from def_path import path
 # Assign the filename: file
 file = 'digits.csv'
 

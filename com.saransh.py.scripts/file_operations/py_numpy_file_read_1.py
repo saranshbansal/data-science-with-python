@@ -2,7 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-path = '../resources/'
+from def_path import path
 
 # Assign filename to variable: file
 file = 'digits.csv'
@@ -15,7 +15,7 @@ print(type(digits))
 
 # Select and reshape a row
 im = digits[21, 1:]
-im_sq = np.reshape(im, (2, 2))
+im_sq = np.reshape(im, (8, 98))
 
 # Plot reshaped data (matplotlib.pyplot already loaded as plt)
 plt.imshow(im_sq, cmap='Greys', interpolation='nearest')

@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 # Import the pandas package
 
 # Initialize reader object: df_reader
-df_reader = pd.read_csv('../resources/WDIData_min.csv', chunksize=10)
+df_reader = pd.read_csv('../_datasets/WDIData_min.csv', chunksize=10)
 
 # Print two chunks
 print(next(df_reader))
@@ -34,7 +34,7 @@ print(next(df_reader))
 #  as pd.
 
 # Initialize reader object: urb_pop_reader
-urb_pop_reader = pd.read_csv('../resources/ind_pop_data.csv', chunksize=1000)
+urb_pop_reader = pd.read_csv('../_datasets/ind_pop_data.csv', chunksize=1000)
 
 # Get the first DataFrame chunk: df_urb_pop
 df_urb_pop = next(urb_pop_reader)

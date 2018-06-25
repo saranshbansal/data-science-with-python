@@ -12,7 +12,7 @@
 # The function makes it convenient to repeat the same process for whatever file and country code we want to process
 # and visualize!
 #
-# We are using the data from 'ind_pop_data.csv', available in /resources/ directory.
+# We are using the data from 'ind_pop_data.csv', available in /_datasets/ directory.
 # The packages pandas and matplotlib.pyplot has been imported as pd and plt respectively.
 #
 # If you have enjoyed working with this data, you can continue exploring it using the pre-processed version available
@@ -21,7 +21,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-def_file_path = '../../resources/'
+def_file_path = '../../_datasets/'
 
 # Define plot_pop()
 def plot_pop(filename, country_code):

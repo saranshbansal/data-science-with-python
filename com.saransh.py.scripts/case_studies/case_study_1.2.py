@@ -7,14 +7,14 @@
 # The csv file 'world_dev_ind.csv' is in your current directory for your use. To begin, you need to open a
 # connection to this file using what is known as a context manager. For example, the command with open('datacamp.csv')
 # as datacamp binds the csv file 'datacamp.csv' as datacamp in the context manager. Here, the with statement is
-# the context manager, and its purpose is to ensure that resources are efficiently allocated when opening a
+# the context manager, and its purpose is to ensure that _datasets are efficiently allocated when opening a
 # connection to a file.
 #
 # If you'd like to learn more about context managers, refer to the DataCamp course on Importing Data in Python
 # (https://www.datacamp.com/courses/importing-data-in-python-part-1).
 
 # Open a connection to the file
-with open('../resources/WDIData_min.csv') as file:
+with open('../_datasets/WDIData_min.csv') as file:
     # Skip the column names
     file.readline()
 
@@ -99,7 +99,7 @@ def read_large_file(file_object):
 #  Go for it!
 # Initialize an empty dictionary: counts_dict
 counts_dict = {}
-with open('../resources/WDIData_min.csv') as file:
+with open('../_datasets/WDIData_min.csv') as file:
     # Iterate over the generator from read_large_file()
     for line in read_large_file(file):
 

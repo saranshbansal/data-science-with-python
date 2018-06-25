@@ -3,7 +3,7 @@ import pandas as pd
 
 # Import sas7bdat package
 
-path = '../resources/'
+from def_path import path
 
 df = pd.read_stata(path + 'disarea.dta', 'rb')
 

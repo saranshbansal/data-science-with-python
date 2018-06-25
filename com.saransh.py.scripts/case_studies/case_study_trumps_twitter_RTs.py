@@ -2,7 +2,7 @@
 import pandas as pd
 
 # Import twitter data
-tweets_df = pd.DataFrame(pd.read_excel("../resources/Trump Tweets(2017).xlsx"))
+tweets_df = pd.DataFrame(pd.read_excel("../_datasets/Trump Tweets(2017).xlsx"))
 
 
 # Define count_entries()

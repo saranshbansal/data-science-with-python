@@ -1,7 +1,7 @@
 import pandas as pd
 
 # If you need to use real values
-df = pd.DataFrame(pd.read_csv('../resources/WDIData_min.csv'))
+df = pd.DataFrame(pd.read_csv('../_datasets/WDIData_min.csv'))
 cols = df.iloc[0, 0:5]
 rows = df.iloc[1:10, 0:5].values
 

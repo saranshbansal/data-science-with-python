@@ -1,4 +1,4 @@
-path = '../resources/'
+from def_path import path
 
 # Open a file: file
 file = open(path + 'moby_dick.txt', mode='r')

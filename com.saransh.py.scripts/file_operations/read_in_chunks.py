@@ -1,4 +1,6 @@
 import pandas as pd
+from def_path import path
+
 
 # Define count_entries()
 def count_entries(csv_file, c_size, colname):
@@ -23,7 +25,7 @@ def count_entries(csv_file, c_size, colname):
 
 
 # Call count_entries(): result_counts
-result_counts = count_entries("../resources/Information_gain_job_advertisements.csv", 10, 'Term')
+result_counts = count_entries(path + 'Information_gain_job_advertisements.csv', 10, 'Term')
 
 # Print result_counts
 print(result_counts)
