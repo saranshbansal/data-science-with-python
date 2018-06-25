@@ -21,7 +21,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-def_file_path = '../resources/'
+def_file_path = '../../resources/'
 
 # Define plot_pop()
 def plot_pop(filename, country_code):
