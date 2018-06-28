@@ -1,0 +1,20 @@
+What is Clustering?
+clustering organizes data points that are close into groups to find a relation or pattern.
+
+Types of Distances: 
+1. Euclidean - using Pythagoras theoram.
+2. Continous - correlation similarity
+3. Manhattan - using sum of all vectors. Like taxi driving through blocks of manhattan city from point A to B.
+
+Ways of examining and organizing multi-dimensional data:
+1. Heirarchical Clustering
+2. K-Means Clustering - R documentation tells us that the k-means method "aims to partition the points into k groups such that 
+the sum of squares from points to the assigned cluster centres is minimized."
+
+Heirarchical Clustering techniques:
+1. complete linkage
+2. Average linkage
+3. heat maps
+
+K-Means clustering techniques:
+

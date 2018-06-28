@@ -1,0 +1,126 @@
+| If you had a ruler of infinite precision, would measuring the height of adults around the world be
+| continuous or discrete?
+
+1: continuous
+2: discrete
+
+Selection: 2
+
+| Not quite! Try again.
+
+| The ruler of infinite precision is the hint. Can you list all possible heights?
+
+1: discrete
+2: continuous
+
+Selection: 2
+
+| You are quite good my friend!
+
+  |===========                                                                                    |  11%
+
+| Is the drawing of a hand of cards continuous or discrete?
+
+1: continuous
+2: discrete
+
+Selection: 2
+
+| All that hard work is paying off!
+
+  |==============                                                                                 |  14%
+
+| Continuous random variables are usually associated with measurements of time, distance, or some
+| biological process since they can take on any value, often within some specified range. Limitations of
+| precision in taking the measurements may imply that the values are discrete; we in fact consider them
+| continuous.
+
+A probability mass function (PMF) gives the probability that a discrete random variable is exactly
+| equal to some value.
+
+| For instance, suppose we have a coin which may or may not be fair. Let x=0 represent a 'heads' outcome
+| and x=1 represent a 'tails' outcome of a coin toss. If p is the probability of 'heads' which of the
+| following represents the PMF of the coin toss?  The variable x is either 0 (heads) or 1 (tails).
+
+1: (p^x)*(1-p)^(1-x)
+2: (p^(1-x))*(1-p)^x
+
+A probability density function [PDF] is associated with a continuous random variable. To quote from
+| Wikipedia, it "is a function that describes the relative likelihood for this random variable to take
+| on a given value. The probability of the random variable falling within a particular range of values
+| is given by ... the area under the density function but above the horizontal axis and between the
+| lowest and greatest values of the range.
+
+| We'll repeat two requirements of a probability density function [PDF]. It must be non-negative everywhere,
+| and the area under it must equal one."
+
+ The cumulative distribution function (CDF) of a random variable X, either discrete or continuous, is
+| the function F(x) equal to the probability that X is less than or equal to x. In the example above,
+| the area of the blue triangle represents the probability that the random variable was less than or
+| equal to the value 1.6.
+
+| When the random variable is continuous, as in the example, the PDF is the derivative of the CDF. So integrating the PDF (the line represented by the diagonal)
+| yields the CDF. When you evaluate the CDF at the limits of integration the result is an area.
+
+Now use the R function integrate to integrate mypdf with the parameters lower equal to 0 and upper equal to 1.6. See if you get the same area (probability) you
+| got before.
+
+> integrate(mypdf, 0, 1.6)
+0.64 with absolute error < 7.1e-15
+
+| You are really on a roll!
+
+  |==========================================================================================================                                                 |  69%
+
+| The survivor function S(x) of a random variable X is defined as the function of x equal to the probability that the random variable X is greater than the value x.
+| This is the complement of the CDF F(x), in our example, the portion of the lower triangle that is not shaded.
+
+
+| We'll close by repeating some important points.
+
+...
+
+  |=========================================================================================================================================                  |  89%
+
+| A probability model connects data to a population using assumptions.
+
+...
+
+  |==============================================================================================================================================             |  91%
+
+| Be careful to distinguish between population medians and sample medians.
+
+...
+
+  |==================================================================================================================================================         |  94%
+
+| A sample median is an estimator of a population median (the estimand).
+
+
+| We represent the conditional probability of an event A given that B has occurred with the notation
+| P(A|B). More specifically, we define the conditional probability of event A, given that B has occurred
+| with the following.
+
+...
+
+  |==============                                                                                 |  14%
+
+| P(A|B) = P(A & B)/ P(B) . P(A|B) is the probability that BOTH A and B occur divided by the probability
+| that B occurs.
+
+| From the definition of P(A|B), we can write P(A&B) = P(A|B) * P(B), right?  Let's use this to express
+| P(B|A).
+| P(B|A) = P(B&A)/P(A) = P(A|B) * P(B)/P(A). This is a simple form of Bayes' Rule which relates the two
+| conditional probabilities.
+Suppose we don't know P(A) itself, but only know its conditional probabilities, that is, the
+| probability that it occurs if B occurs and the probability that it occurs if B doesn't occur. These
+| are P(A|B) and P(A|~B), respectively. We use ~B to represent 'not B' or 'B complement'.
+
+...
+
+  |===========================                                                                    |  29%
+
+| We can then express P(A) = P(A|B) * P(B) + P(A|~B) * P(~B) and substitute this is into the denominator
+| of Bayes' Formula.
+
+| P(B|A) = P(A|B) * P(B) / ( P(A|B) * P(B) + P(A|~B) * P(~B) )

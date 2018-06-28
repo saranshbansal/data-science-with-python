@@ -1,0 +1,11 @@
+In other words, we'd like to find the best matrix created with fewer variables (that is, a lower rank
+| matrix) that explains the original data. This is related to data compression.
+
+ Two related solutions to these problems are PCA which stands for Principal Component Analysis and SVD,
+| Singular Value Decomposition. This latter simply means that we express a matrix X of observations
+| (rows) and variables (columns) as the product of 3 other matrices, i.e., X=UDV^t. This last term (V^t)
+| represents the transpose of the matrix V.
+
+1. principal component analysis (PCA) 
+
+2. singular value decomposition (SVD)
