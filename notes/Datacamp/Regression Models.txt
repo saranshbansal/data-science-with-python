@@ -1,0 +1,3 @@
+Regression: Applied over continuous stream of value to predict next value.
+Classification: Applied over discrete set of values to identify which 'class' or category the target value is going to fall under.
+

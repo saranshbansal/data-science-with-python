@@ -13,7 +13,6 @@
 # and then fit it to the data. The data has been pre-loaded into a DataFrame called df. #
 
 import pandas as pd
-# Import KNeighborsClassifier from sklearn.neighbors
 from sklearn.neighbors import KNeighborsClassifier
 
 from def_path import path
@@ -27,8 +26,8 @@ df = pd.read_csv(path + file)
 print(df.describe())
 
 # Create arrays for the features(X) and the response variable/target(y)
-y = df['party'].values
 X = df.drop('party', axis=1).values
+y = df['party'].values
 
 # Create a k-NN classifier with 6 neighbors
 knn = KNeighborsClassifier(n_neighbors=60)
