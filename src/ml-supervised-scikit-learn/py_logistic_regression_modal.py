@@ -62,7 +62,7 @@ from sklearn.metrics import roc_curve
 from matplotlib import pyplot as plt
 
 # Compute predicted probabilities: y_pred_prob
-y_pred_prob = logreg.predict_proba(X_test)[:,1]
+y_pred_prob = logreg.predict_proba(X_test)[:, 1]
 
 # Generate ROC curve values: fpr, tpr, thresholds
 fpr, tpr, thresholds = roc_curve(y_test, y_pred_prob)
@@ -74,3 +74,12 @@ plt.xlabel('False Positive Rate')
 plt.ylabel('True Positive Rate')
 plt.title('ROC Curve')
 plt.show()
+
+# -------------------------
+
+# Calculating ROC AUC score
+# Larger area under ROC curve = better model
+
+from sklearn.metrics import roc_auc_score
+
+print(roc_auc_score(y_test, y_pred_prob))
