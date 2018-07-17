@@ -15,6 +15,14 @@ Fit the model to the grain data samples.
 Append the value of the inertia_ attribute of model to the list inertias.
 The code to plot ks vs inertias has been written for you, so hit 'Submit Answer' to see the plot!
 '''
+# Import pyplot
+import matplotlib.pyplot as plt
+from numpy import array
+import pandas as pd
+from sklearn.cluster import KMeans
+
+from env import points, new_points
+
 ks = range(1, 6)
 inertias = []
 

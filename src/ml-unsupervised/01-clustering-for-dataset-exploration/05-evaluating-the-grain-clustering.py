@@ -13,6 +13,15 @@ Create a DataFrame df with two columns named 'labels' and 'varieties', using lab
 Use the pd.crosstab() function on df['labels'] and df['varieties'] to count the number of times each grain variety coincides with each cluster label. Assign the result to ct.
 Hit 'Submit Answer' to see the cross-tabulation!
 '''
+
+# Import pyplot
+import matplotlib.pyplot as plt
+from numpy import array
+import pandas as pd
+from sklearn.cluster import KMeans
+
+from env import points, new_points
+
 # Create a KMeans model with 3 clusters: model
 model = KMeans(n_clusters=3)
 
