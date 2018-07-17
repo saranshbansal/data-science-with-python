@@ -1,6 +1,6 @@
 import h5py
 
-from def_path import path
+from env import path
 
 # Assign filename: file
 file = 'NEONDS.hdf5'

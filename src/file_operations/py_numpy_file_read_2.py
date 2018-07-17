@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 
-from def_path import path
+from env import path
 
 # Assign the filename: file
 file = 'amis.csv'

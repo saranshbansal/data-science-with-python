@@ -2,7 +2,7 @@
 import pandas as pd
 from sqlalchemy import create_engine
 
-from def_path import path
+from env import path
 
 # Create engine: engine
 engine = create_engine('sqlite:///' + path + 'Chinook.sqlite');

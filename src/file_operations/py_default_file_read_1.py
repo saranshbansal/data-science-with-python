@@ -1,4 +1,4 @@
-from def_path import path
+from env import path
 
 # Open a file: file
 file = open(path + 'moby_dick.txt', mode='r')
