@@ -1,7 +1,9 @@
 '''
 How many clusters of grain?
 
-In the video, you learned how to choose a good number of clusters for a dataset using the k-means inertia graph. You are given an array samples containing the measurements (such as area, perimeter, length, and several others) of samples of grain. What's a good number of clusters in this case?
+In the video, you learned how to choose a good number of clusters for a dataset using the k-means inertia graph. You
+are given an array samples containing the measurements (such as area, perimeter, length, and several others) of
+samples of grain. What's a good number of clusters in this case?
 
 KMeans and PyPlot (plt) have already been imported for you.
 
@@ -17,11 +19,12 @@ The code to plot ks vs inertias has been written for you, so hit 'Submit Answer'
 '''
 # Import pyplot
 import matplotlib.pyplot as plt
-from numpy import array
-import pandas as pd
+import numpy as np
 from sklearn.cluster import KMeans
 
-from env import points, new_points
+from env import points
+
+samples = np.array(points)
 
 ks = range(1, 6)
 inertias = []
@@ -29,13 +32,13 @@ inertias = []
 for k in ks:
     # Create a KMeans instance with k clusters: model
     model = KMeans(n_clusters=k)
-    
+
     # Fit model to samples
     model.fit(samples)
-    
+
     # Append the inertia to the list of inertias
     inertias.append(model.inertia_)
-    
+
 # Plot ks vs inertias
 plt.plot(ks, inertias, '-o')
 plt.xlabel('number of clusters, k')

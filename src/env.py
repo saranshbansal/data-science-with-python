@@ -1,4 +1,24 @@
+import numpy as np
+import pandas as pd
+
 path = '../../_datasets/'
+
+
+def smart_print(data):
+    print(data)
+    print('-------')
+    print("data type: ", type(data))
+    if type(data) in ['list', 'tuple', np.ndarray]:
+        print("data ndim: ", data.ndim)
+        print("data shape:", data.shape)
+        print("data size: ", data.size)
+    elif type(data) == 'dict':
+        print("data length: ", len(data))
+    elif type(data) == pd.DataFrame:
+        print("data head: ", data.head())
+        print("data shape: ", data.shape)
+        print("data info: ", data.info(verbose=True))
+
 
 points = [[0.06544649, -0.76866376],
           [-1.52901547, -0.42953079],

@@ -1,4 +1,4 @@
-'''
+"""
 How many clusters?
 
 You are given an array points of size 300x2, where each row gives the (x, y) co-ordinates of a point on a map. Make a
@@ -11,11 +11,19 @@ Create an array called ys that contains the values of points[:,1] - that is, col
 Make a scatter plot by passing xs and ys to the plt.scatter() function.
 Call the plt.show() function to show your plot.
 How many clusters do you see?
-'''
+"""
+import matplotlib.pyplot as plt
+import numpy as np
+
+from env import points
+
+print(type(points))
+points = np.array(points)
+
 xs = points[:, 0]
 
 ys = points[:, 1]
 
-plt.scatter(xs, ys)
+plt.scatter(xs, ys, alpha=0.5)
 
 plt.show()
