@@ -12,16 +12,17 @@ Assign column 0 of grains to width and column 1 of grains to length.
 Make a scatter plot with width on the x-axis and length on the y-axis.
 Use the pearsonr() function to calculate the Pearson correlation of width and length.
 '''
+
 # Perform the necessary imports
 import matplotlib.pyplot as plt
+from grains_data_from_dataset import grains
 from scipy.stats import pearsonr
 
 # Assign the 0th column of grains: width
-width = grains[:,0]
+width = grains[:, 0]
 
 # Assign the 1st column of grains: length
-length = grains[:,1]
-
+length = grains[:, 1]
 # Scatter plot width vs length
 plt.scatter(width, length)
 plt.axis('equal')
@@ -32,4 +33,3 @@ correlation, pvalue = pearsonr(width, length)
 
 # Display the correlation
 print(correlation)
-
