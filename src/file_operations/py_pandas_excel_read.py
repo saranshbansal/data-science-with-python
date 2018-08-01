@@ -16,7 +16,7 @@
 # Import pandas
 import pandas as pd
 
-from env import path
+from helper import path
 
 # Assign spreadsheet filename: file
 file = 'battledeath.xlsx'

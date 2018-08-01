@@ -22,7 +22,7 @@ from scipy.stats import randint
 from sklearn.model_selection import RandomizedSearchCV
 from sklearn.tree import DecisionTreeClassifier
 
-from env import path
+from helper import path
 
 # Read the CSV file into a DataFrame: df
 df = pd.read_csv(path + 'diabetes.csv')

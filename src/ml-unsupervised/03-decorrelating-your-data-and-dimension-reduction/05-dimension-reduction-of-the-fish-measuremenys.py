@@ -1,7 +1,9 @@
 '''
 Dimension reduction of the fish measurements
 
-In a previous exercise, you saw that 2 was a reasonable choice for the "intrinsic dimension" of the fish measurements. Now use PCA for dimensionality reduction of the fish measurements, retaining only the 2 most important components.
+In a previous exercise, you saw that 2 was a reasonable choice for the "intrinsic dimension" of the fish
+measurements. Now use PCA for dimensionality reduction of the fish measurements, retaining only the 2 most important
+components.
 
 The fish measurements have already been scaled for you, and are available as scaled_samples.
 
@@ -14,6 +16,11 @@ Use the .transform() method of pca to transform the scaled_samples. Assign the r
 '''
 # Import PCA
 from sklearn.decomposition import PCA
+
+from helper import scaled_samples
+
+# Create a PCA instance: pca
+pca = PCA()
 
 # Create a PCA model with 2 components: pca
 pca = PCA(n_components=2)

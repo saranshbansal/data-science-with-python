@@ -20,7 +20,7 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import scale
 
-from env import path
+from helper import path
 
 # Read 'white-wine.csv' into a DataFrame: df
 df = pd.read_csv(path + 'white-wine.csv')

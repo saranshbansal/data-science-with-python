@@ -7,7 +7,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
 
-from env import path
+from helper import path
 
 # Read the CSV file into a DataFrame: df
 df = pd.read_csv(path + 'gm_2008_region.csv')

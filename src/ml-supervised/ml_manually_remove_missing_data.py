@@ -23,7 +23,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from env import path
+from helper import path
 
 # Read 'gapminder.csv' into a DataFrame: df
 df = pd.read_csv(path + 'gm_2008_region.csv')

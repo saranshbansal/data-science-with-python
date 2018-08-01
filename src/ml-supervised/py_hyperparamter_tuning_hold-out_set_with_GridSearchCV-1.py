@@ -14,7 +14,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import train_test_split
 
-from env import path
+from helper import path
 
 # Read the CSV file into a DataFrame: df
 df = pd.read_csv(path + 'diabetes.csv')

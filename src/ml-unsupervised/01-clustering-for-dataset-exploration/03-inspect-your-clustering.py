@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 from numpy import array
 from sklearn.cluster import KMeans
 
-from env import points, new_points
+from helper import points, new_points
 
 # Convert to np-arrays
 points = array(points)

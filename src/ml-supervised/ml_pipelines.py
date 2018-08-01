@@ -35,7 +35,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.svm import SVC
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
-from env import path
+from helper import path
 
 # Read 'white-wine.csv' into a DataFrame: df
 df = pd.read_csv(path + 'white-wine.csv')

@@ -15,7 +15,7 @@
 import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 
-from env import path
+from helper import path
 
 # this dataset won't work. Can't run this program.
 file = 'house-votes-84.csv'

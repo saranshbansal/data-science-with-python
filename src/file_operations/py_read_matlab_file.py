@@ -3,7 +3,7 @@ import scipy.io
 import matplotlib.pyplot as plt
 import numpy as np
 
-from env import path
+from helper import path
 
 # Load MATLAB file: mat
 mat = scipy.io.loadmat(path + 'albeck_gene_expression.mat')

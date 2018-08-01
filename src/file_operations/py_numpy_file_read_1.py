@@ -2,7 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-from env import path
+from helper import path
 
 # Assign filename to variable: file
 file = 'digits.csv'

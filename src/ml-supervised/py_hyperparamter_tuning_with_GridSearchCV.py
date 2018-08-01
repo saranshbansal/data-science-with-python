@@ -23,7 +23,7 @@ import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import GridSearchCV
 
-from env import path
+from helper import path
 
 # Read the CSV file into a DataFrame: df
 df = pd.read_csv(path + 'diabetes.csv')

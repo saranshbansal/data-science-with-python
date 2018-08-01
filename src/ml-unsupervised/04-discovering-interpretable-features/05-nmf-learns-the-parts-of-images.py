@@ -20,8 +20,28 @@ To each component of the model (accessed via model.components_), apply the show_
 Assign the row 0 of features to digit_features.
 Print digit_features.
 '''
+import csv
+
+import numpy as np
+# Import pyplot
+from matplotlib import pyplot as plt
 # Import NMF
 from sklearn.decomposition import NMF
+
+from helper import path
+
+with open('../' + path + 'lcd-digits.csv', 'r') as f:
+    samples = list(csv.reader(f, delimiter=','))
+    samples = np.array(samples).astype(np.float)
+
+
+def show_as_image(sample):
+    bitmap = sample.reshape((13, 8))
+    plt.figure()
+    plt.imshow(bitmap, cmap='gray', interpolation='nearest')
+    plt.colorbar()
+    plt.show()
+
 
 # Create an NMF model: model
 model = NMF(n_components=7)
@@ -34,7 +54,7 @@ for component in model.components_:
     show_as_image(component)
 
 # Assign the 0th row of features: digit_features
-digit_features = features[0,:]
+digit_features = features[0, :]
 
 # Print digit_features
 print(digit_features)

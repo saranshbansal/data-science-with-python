@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from env import path
+from helper import path
 
 # Assign filename: file
 file = 'titanic_corrupt.txt'

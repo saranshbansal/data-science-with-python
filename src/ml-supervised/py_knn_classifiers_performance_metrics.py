@@ -31,7 +31,7 @@ from sklearn.model_selection import train_test_split
 # Import necessary modules
 from sklearn.neighbors import KNeighborsClassifier
 
-from env import path
+from helper import path
 
 # Read the CSV file into a DataFrame: df
 df = pd.read_csv(path + 'diabetes.csv')

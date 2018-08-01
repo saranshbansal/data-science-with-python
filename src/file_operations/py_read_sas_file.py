@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 # Import sas7bdat package
 from sas7bdat import SAS7BDAT
 
-from env import path
+from helper import path
 
 # Save file to a DataFrame: df_sas
 with SAS7BDAT(path+'sales.sas7bdat') as file:

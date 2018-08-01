@@ -1,7 +1,9 @@
 '''
 A tf-idf word-frequency array
 
-In this exercise, you'll create a tf-idf word frequency array for a toy collection of documents. For this, use the TfidfVectorizer from sklearn. It transforms a list of documents into a word frequency array, which it outputs as a csr_matrix. It has fit() and transform() methods like other sklearn objects.
+In this exercise, you'll create a tf-idf word frequency array for a toy collection of documents. For this,
+use the TfidfVectorizer from sklearn. It transforms a list of documents into a word frequency array, which it outputs
+as a csr_matrix. It has fit() and transform() methods like other sklearn objects.
 
 You are given a list documents of toy documents about pets. Its contents have been printed in the IPython Shell.
 
@@ -15,6 +17,8 @@ The columns of the array correspond to words. Get the list of words by calling t
 '''
 # Import TfidfVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
+
+documents = ['cats say meow', 'dogs say woof', 'dogs chase cats']
 
 # Create a TfidfVectorizer: tfidf
 tfidf = TfidfVectorizer()

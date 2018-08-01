@@ -15,7 +15,7 @@ How many clusters do you see?
 import matplotlib.pyplot as plt
 import numpy as np
 
-from env import points
+from helper import points
 
 print(type(points))
 points = np.array(points)

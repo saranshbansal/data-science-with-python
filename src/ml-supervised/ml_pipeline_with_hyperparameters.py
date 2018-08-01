@@ -20,7 +20,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 
-from env import path
+from helper import path
 
 # Read 'white-wine.csv' into a DataFrame: df
 df = pd.read_csv(path + 'white-wine.csv')

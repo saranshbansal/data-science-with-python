@@ -22,7 +22,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.cluster import KMeans
 
-from env import points
+from helper import points
 
 samples = np.array(points)
 

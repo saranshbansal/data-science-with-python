@@ -12,11 +12,20 @@ Use the .reshape() method of digit to get a 2D array with shape (13, 8). Assign 
 Print bitmap, and notice that the 1s show the digit 7!
 Use the plt.imshow() function to display bitmap as an image.
 '''
+import csv
+
+import numpy as np
 # Import pyplot
 from matplotlib import pyplot as plt
 
+from helper import path
+
+with open('../' + path + 'lcd-digits.csv', 'r') as f:
+    samples = list(csv.reader(f, delimiter=','))
+    samples = np.array(samples).astype(np.float)
+
 # Select the 0th row: digit
-digit = samples[0,:]
+digit = samples[0, :]
 
 # Print digit
 print(digit)

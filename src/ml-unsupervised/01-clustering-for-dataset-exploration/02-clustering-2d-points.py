@@ -21,7 +21,7 @@ import numpy as np
 # Import KMeans
 from sklearn.cluster import KMeans
 
-from env import points, new_points, smart_print
+from helper import points, new_points, smart_print
 
 # Convert to np-arrays
 points = np.array(points)

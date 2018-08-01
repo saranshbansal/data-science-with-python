@@ -2,7 +2,7 @@ import csv
 
 import numpy as np
 
-from env import path
+from helper import path
 
 with open('../' + path + 'seeds-width-vs-length.csv', 'r') as f:
     grains = list(csv.reader(f, delimiter=','))

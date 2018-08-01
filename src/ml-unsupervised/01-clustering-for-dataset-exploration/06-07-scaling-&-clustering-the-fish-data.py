@@ -17,10 +17,10 @@ Create an instance of StandardScaler called scaler.
 Create an instance of KMeans with 4 clusters called kmeans.
 Create a pipeline called pipeline that chains scaler and kmeans. To do this, you just need to pass them in as arguments to make_pipeline().
 '''
+from sklearn.cluster import KMeans
 # Perform the necessary imports
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
-from sklearn.cluster import KMeans
 
 # Create scaler: scaler
 scaler = StandardScaler()
@@ -30,7 +30,6 @@ kmeans = KMeans(n_clusters=4)
 
 # Create pipeline: pipeline
 pipeline = make_pipeline(scaler, kmeans)
-
 
 '''
 Clustering the fish data
@@ -51,7 +50,7 @@ Using pd.crosstab(), create a cross-tabulation ct of df['labels'] and df['specie
 import pandas as pd
 import numpy as np
 
-from env import points
+from helper import points
 
 samples = np.array(points)
 

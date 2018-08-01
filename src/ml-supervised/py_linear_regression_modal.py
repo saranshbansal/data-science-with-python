@@ -19,7 +19,7 @@ from matplotlib import pyplot as plt
 # Import LinearRegression
 from sklearn.linear_model import LinearRegression
 
-from env import path
+from helper import path
 
 # Read the CSV file into a DataFrame: df
 df = pd.read_csv(path + 'gm_2008_region.csv')

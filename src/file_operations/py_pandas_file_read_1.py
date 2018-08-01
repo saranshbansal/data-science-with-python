@@ -1,6 +1,6 @@
 # Import pandas as pd
 import pandas as pd
-from env import path
+from helper import path
 # Assign the filename: file
 file = 'digits.csv'
 

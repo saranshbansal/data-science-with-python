@@ -19,7 +19,7 @@ from sklearn.preprocessing import Imputer
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import ElasticNet
 
-from env import path
+from helper import path
 
 # Read 'gm_2008_region.csv' into a DataFrame: df
 df = pd.read_csv(path + 'gm_2008_region.csv')
