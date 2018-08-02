@@ -29,8 +29,10 @@ with open('../' + path + 'lcd-digits.csv', 'r') as f:
 
 def show_as_image(sample):
     bitmap = sample.reshape((13, 8))
+    bitmap[bitmap >= 0] = 1
+    bitmap[bitmap < 0] = 0
     plt.figure()
-    plt.imshow(bitmap, cmap='gray', interpolation='nearest')
+    plt.imshow(bitmap, cmap='gist_yarg', interpolation='nearest', vmin=-.1, vmax=1.1)
     plt.colorbar()
     plt.show()
 
