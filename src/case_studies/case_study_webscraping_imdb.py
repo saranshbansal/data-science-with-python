@@ -1,16 +1,16 @@
 """
-Created on Mon Apr 18, 2016
-@author: Honglei
-Purpose: To scrapy top 250 movies in IMDB and visualize the frequency varying time
+@author: Saransh Bansal
+Purpose: Scrape top 250 movies in IMDB and visualize the frequency of these top films released in specific years
 """
 import os
 import re
 import sys
 
-import matplotlib.pyplot as plt
 import numpy as np
-import pandas as pd
 import requests
+
+import matplotlib.pyplot as plt
+import pandas as pd
 from bs4 import BeautifulSoup
 
 os.getcwd()  # current working directory
