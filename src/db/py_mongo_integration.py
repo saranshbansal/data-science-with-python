@@ -1,5 +1,6 @@
 import pprint
 
+from bson import ObjectId
 from pymongo import MongoClient
 
 MONGODB_HOST = 'localhost'
@@ -26,9 +27,19 @@ class MongoUtil():
         mycol = self.db[coll_name]
         mycol.insert_one(document)
 
+    def update_document(self, coll_name, obj_id):
+        mycol = self.db[coll_name]
+        mycol.update_one({'_id': ObjectId(obj_id)}, {"$set": {"title": "abc"}})
+
     def print_all_docs(self, coll_name):
         mycol = self.db[coll_name]
-        pprint.pprint(mycol.find_one())
+        for post in mycol.find():
+            pprint.pprint(post)
+
+    def count_documents(self, coll_name):
+        mycol = self.db[coll_name]
+        count = mycol.count_documents({})
+        print(count)
 
 
 instance = MongoUtil()
@@ -39,6 +50,10 @@ data = {
     'likes': 100,
 }
 
-instance.insert_document(COLLECTION_NAME, data)
+# instance.insert_document(COLLECTION_NAME, data)
 
 instance.print_all_docs(COLLECTION_NAME)
+
+instance.count_documents(COLLECTION_NAME)
+
+# instance.update_document(COLLECTION_NAME, '5d2c87e03c30f6680050c521')
