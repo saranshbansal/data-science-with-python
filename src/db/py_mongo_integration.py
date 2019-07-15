@@ -20,8 +20,8 @@ class MongoUtil():
         return self.db
 
     def print_collection(self, coll_name):
-        col = self.db[coll_name]
-        print(col)
+        mycol = self.db[coll_name]
+        print(mycol)
 
     def insert_document(self, coll_name, document=None):
         mycol = self.db[coll_name]
