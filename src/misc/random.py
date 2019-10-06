@@ -56,3 +56,7 @@ if name:
     given = names[0]
     family = names[len(names) - 1]
     print('{}, {}'.format(given, family))
+
+
+print('   '.strip() or 'NA')
+
